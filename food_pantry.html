@@ -10,16 +10,18 @@
 </head>
 
 <body>
-
     <header>
         <div class = "skip" tabindex = "0"><a href="#about_us">Skip to Main Content</a></div>
         <nav aria-label="Main Navigation">
-            <h1>Food Pantry: The Maize and Blue Cupboard</h1>
+            <div class="image-container">
+                <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo"> 
+                <h1>Food Pantry</h1>
+            </div>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="caps.html">CAPS</a></li>
-                <li class="active"><a href="food_pantry.html">Food Pantry</a></li>
-                <li><a href="cew+.html">CEW+</a></li>
+                <li id="nav-items"><a href="index.html">Home</a></li>
+                <li id="nav-items"><a href="caps.html">CAPS</a></li>
+                <li class="active" id="nav-items"><a href="food_pantry.html">Food Pantry</a></li>
+                <li id="nav-items"><a href="cew+.html">CEW+</a></li>
             </ul>
         </nav>
 
@@ -73,10 +75,29 @@
                 <li>Friday: 12pm-7pm</li>
                 <li>Saturday: CLOSED</li>
             </ul>
+        </section>
+
+        <section>
             <h2>Get In Touch</h2>
             <p>The Maize and Blue Cupboard is located in the basement of Betsy Barbour Residence Hall (via the Maynard
                 entrance) at 420 S State St Ann Arbor, MI 48109. Please contact us for ramp or elevator access.</p>
             <p> You can also reach us at (734) 936-2794.</p>
+            <form action="https://formspree.io/f/xwplwola" method="POST">
+                <fieldset>
+                    <legend>Contact Us</legend>
+                    <label for="name_id">Your Name</label>
+                    <input type="text" placeholder="Enter Your Name" id="name_id" name="name">
+
+                    <label for="email_id">Your Email</label>
+                    <input type="email" id="email_id" name="email">
+
+                    <label for="phone_number">Your Phone Number</label>
+                    <input type="tel" placeholder="123-456-7890" id="phone_number" name="phone">
+                    <!-- <div><span>Format: 123-456-7890</span></div> -->
+
+                    <input type="submit" value="submit">
+                </fieldset>
+            </form>
         </section>
         <!-- Text and Visual content taken & modified from https://mbc.studentlife.umich.edu/ -->
 
@@ -84,9 +105,9 @@
     <footer>
         <p>MSI Academic Advising | <a
                 href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic
-                Advising </a></p>
+                Advising </a> | © Copyright <span id="year"></span> </p>
     </footer>
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>

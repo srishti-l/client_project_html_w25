@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>404 Error</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="skip" tabindex="0"><a href="#error">Skip to Main Content</a></div>
+        <nav>
+            <div class="image-container">
+                <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo"> 
+                <h1>404 ERROR: Page Not Found</h1>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="error">
+            <h2>Oops... Looks like that page doesn't exist!</h2>
+
+            <div>The page you are looking for does not exist. <br>
+            Not to worry, though! </div>
+
+            <h3>Your Options</h3>
+            <ul>
+                <li>Visit our <a href="index.html">Home Page </a></li>
+                <li>Check out some of our other pages:
+                    <ul>
+                        <li><a href="caps.html">CAPS: Counseling and Psychological Services</a></li>
+                        <li><a href="food_pantry.html">Food Pantry</a></li>
+                        <li><a href="cew+.html">CEW+: Center for the Education of Women+</a></li>
+                    </ul>
+                </li>
+                <li>Or...</li>
+            </ul>
+                <form action="https://formspree.io/f/xwplwola" method="POST">
+                    <fieldset>
+                        <legend>Contact Us</legend>
+                        <label for="name_id">Your Name</label>
+                        <input type="text" placeholder="Enter Your Name" id="name_id" name="name">
+    
+                        <label for="email_id">Your Email</label>
+                        <input type="email" id="email_id" name="email">
+    
+                        <label for="phone_number">Your Phone Number</label>
+                        <input type="tel" placeholder="123-456-7890" id="phone_number" name="phone"> 
+
+                        <input type="submit" value="submit">
+                        
+                    </fieldset>
+    </main>
+    
+    <footer>
+        <p>MSI Academic Advising | <a
+                href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic
+                Advising </a> | © Copyright <span id="year"></span> </p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

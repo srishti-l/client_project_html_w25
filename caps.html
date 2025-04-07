@@ -14,12 +14,15 @@
     <header>
         <div class="skip" tabindex="0"><a href="#quick_actions">Skip to Main Content</a></div>
         <nav aria-label="Main Navigation">
-            <h1>CAPS: Counseling and Psychological Services</h1>
+            <div class="image-container">
+                <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+                <h1>CAPS: Counseling and Psychological Services</h1>
+            </div>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="caps.html">CAPS</a></li>
-                <li><a href="food_pantry.html">Food Pantry</a></li>
-                <li><a href="cew+.html">CEW+</a></li>
+                <li id="nav-items"><a href="index.html">Home</a></li>
+                <li class="active" id="nav-items"><a href="caps.html">CAPS</a></li>
+                <li id="nav-items"><a href="food_pantry.html">Food Pantry</a></li>
+                <li id="nav-items"><a href="cew+.html">CEW+</a></li>
             </ul>
         </nav>
 
@@ -29,10 +32,12 @@
             <h2>Quick Actions</h2>
             <nav aria-label="Quick Actions">
                 <ul>
-                    <li> <a href="https://caps.umich.edu/article/scheduling-appointment">Schedule an Appointment</a>
+                    <li id="body-items"> <a href="https://caps.umich.edu/article/scheduling-appointment">Schedule an
+                            Appointment</a>
                     </li>
-                    <li> <a href="https://caps.umich.edu/article/urgent-support">Urgent Support</a></li>
-                    <li> <a href="https://caps.umich.edu/article/mental-health-support-options"> Treatment & Support
+                    <li id="body-items"> <a href="https://caps.umich.edu/article/urgent-support">Urgent Support</a></li>
+                    <li id="body-items"> <a href="https://caps.umich.edu/article/mental-health-support-options">
+                            Treatment & Support
                             Options</a></li>
                 </ul>
             </nav>
@@ -63,7 +68,7 @@
         <section id="support_tools">
             <h2>Our Support Tools</h2>
             <ol>
-                <li> <a href="https://caps.umich.edu/lets-talk"> Let's Talk</a>
+                <li id="body-items"> <a href="https://caps.umich.edu/lets-talk"> Let's Talk</a>
                     <img src="images/lets_talk_Weekly_Schedule.png"
                         alt="A flyer of a weekday schedule highlighting offerings for Let's Talk from Monday-Friday">
 
@@ -71,7 +76,8 @@
                         It provides casual meetings with counselors during specific drop-in times for initial
                         support and advice."</p>
                 </li>
-                <li><a href="https://caps.umich.edu/individual-peer-counseling"> Individual Peer Counseling</a>
+                <li id="body-items"><a href="https://caps.umich.edu/individual-peer-counseling"> Individual Peer
+                        Counseling</a>
                     <img src="images/individual_peer_counseling.png"
                         alt="CAPS Individual Peer Counseling logo with blue and yellow handprints">
                     <p>
@@ -79,7 +85,8 @@
                         students across the University of Michigan. We are here to support student mental health and
                         offer students a place to vent.</p>
                 </li>
-                <li><a href="https://caps.umich.edu/article/uwill-teletherapy-services"> Uwill Teletherapy
+                <li id="body-items"><a href="https://caps.umich.edu/article/uwill-teletherapy-services"> Uwill
+                        Teletherapy
                         Services</a>
                     <img src="images/uwill_logo_0.jpg" alt="Uwill Student Mental Health & Wellness Logo">
 
@@ -88,7 +95,7 @@
                         counseling option offers students greater flexibility and allows CAPS to expand its service
                         capacity.</p>
                 </li>
-                <li><a href="https://caps.umich.edu/article/togetherall">Togetherall</a>
+                <li id="body-items"><a href="https://caps.umich.edu/article/togetherall">Togetherall</a>
                     <img src="images/togetherall_triblock.png"
                         alt="Togetherall flyer reading 'A safe community to support your mental health' in bold and 'Joing today for free with your academic email address' in normal font, with an image of a phone text screen and a man and a woman">
                     <p>U-M Counseling & Psychological Services (CAPS) welcomes all of our 1st year students including
@@ -98,14 +105,7 @@
 
         </section>
 
-        <section id="contact">
-            <h2>Get In Touch</h2>
-            <p>CAPS: Counseling and Psychological Services is located at the 4th floor of the Michigan Union: Michigan
-                Union, 530 South State Street, Suite 4079, Ann Arbor, MI 48109. </p>
-            <p>You can also reach us 24/7 at (734) 764-8312 or via email at caps-uofm@umich.edu.</p>
-            <p>CAPS has a limited number of private spaces available for students to connect with their counselor via
-                telecounseling. Please contact the front desk for more information on those private spaces.</p>
-
+        <section id="disclaimers">
             <h2>Disclaimers</h2>
             <p><strong>Please Note:</strong> During high-demand periods, CAPS will be unable to accommodate
                 class-related interviews
@@ -118,14 +118,40 @@
                 has a separate entrance adjacent to CAPS. If you have any questions, please feel free to contact us.
             </p>
         </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>CAPS: Counseling and Psychological Services is located at the 4th floor of the Michigan Union: Michigan
+                Union, 530 South State Street, Suite 4079, Ann Arbor, MI 48109. </p>
+            <p>You can also reach us 24/7 at (734) 764-8312 or via email at caps-uofm@umich.edu.</p>
+            <p>CAPS has a limited number of private spaces available for students to connect with their counselor via
+                telecounseling. Please contact the front desk for more information on those private spaces.</p>
+
+            <form action="https://formspree.io/f/xwplwola" method="POST">
+                <fieldset>
+                    <legend>Contact Us</legend>
+                    <label for="name_id">Your Name</label>
+                    <input type="text" placeholder="Enter Your Name" id="name_id" name="name">
+
+                    <label for="email_id">Your Email</label>
+                    <input type="email" id="email_id" name="email">
+
+                    <label for="phone_number">Your Phone Number</label>
+                    <input type="tel" placeholder="123-456-7890" id="phone_number" name="phone">
+
+                    <input type="submit" value="submit">
+                </fieldset>
+            </form>
+
+        </section>
     </main>
     <!-- Text and visual content taken & modified from https://caps.umich.edu/ -->
     <footer>
         <p>MSI Academic Advising | <a
                 href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic
-                Advising </a></p>
+                Advising </a> | © Copyright <span id="year"></span> </p>
     </footer>
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
